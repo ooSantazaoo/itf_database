@@ -35,7 +35,6 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-mysqli_close($conn);
 ?>
 </body>
 </html>
