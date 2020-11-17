@@ -5,9 +5,9 @@ mysqli_real_connect($conn, 'santanakano.mysql.database.azure.com', 'ooSantazaoo@
 $name=$_POST['name'];
 $comment=$_POST['comment'];
 $link=$_POST['link'];
-$sql="UPDATE guestbook SET Name='$name',Comment='$comment',Link='$link' WHERE ID='$id'";
+$sql="UPDATE guestbook SET name='$name',comment='$comment',link='$link' WHERE ID='$id'";
 if (mysqli_query($conn, $sql)) {
-    header("Location: index.php");
+    header("Location: show.php");
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
