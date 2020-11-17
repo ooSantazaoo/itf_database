@@ -3,6 +3,19 @@
 <title>ITF Lab</title>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://database-santa.azurewebsites.net/form.html">Form</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://database-santa.azurewebsites.net/show.php">Show <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'santanakano.mysql.database.azure.com', 'ooSantazaoo@santanakano', 'santa+123', 'itf_lab', 3306);
