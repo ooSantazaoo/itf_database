@@ -33,7 +33,7 @@ while($Result = mysqli_fetch_array($res))
   </tr>
 <?php
 }
-</table>
 ?>
+</table>
 </body>
 </html>
